@@ -26,7 +26,7 @@ driver.get("https://www.drfrostmaths.com/timestables-game.php")
 driver.find_element(By.CLASS_NAME, "very-large-button-variant").send_keys(Keys.ENTER)
 
 time.sleep(1)
-driver.execute_script("timeElapsed = 5")
+driver.execute_script("timeElapsed = 7200")
 
 q = driver.find_element(By.ID, "question").text
 if "÷" in q:
